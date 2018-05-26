@@ -1,7 +1,10 @@
 :root {
 	--font: nunito;
-	--primary-color: #fa0;
-	--light: #eee;
+	--primary-color: #000;
+	--light: #fff;
+}
+* {
+	font-family: 'Roboto', sans-serif !important;
 }
 
 * + *{
@@ -42,13 +45,13 @@
 .card:focus,
 hr {
 	outline: 0;
-	border: solid var(--primary-color);
+	/* border: solid var(--primary-color); */
 }
 
 .card,
 pre {
 	padding: 1em;
-	border: solid var(--light);
+	/* border: solid var(--light); */
 }
 
 a:hover,
