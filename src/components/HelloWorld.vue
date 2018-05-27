@@ -1,13 +1,17 @@
 <template>
     <div>
-
+        Hello components BTS x Bulma
+        <bts-button :message="Bts"></bts-button>
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import BtsButton from './button/index'
+export default {
+  components: {
+    BtsButton
+  }
+}
 </script>
 
 <style scoped>
