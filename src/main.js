@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // set css layout
-import './assets/layout.css'
+import './assets/bulma.css'
 
 Vue.config.productionTip = false
 
