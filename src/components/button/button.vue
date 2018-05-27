@@ -1,18 +1,18 @@
 <template>
-	<div>
-		<button class="button" :style="btsType">  {{ message }} </button>
-	</div>
+<div>
+  <button class="button" :style="btsType">  {{ message }} </button>
+</div>
 </template>
 
 <script>
-	export default {
-		props: {
-     btsStyle: String,
-     message: null,
-     btsRounded: {
-       type: Boolean,
-       default: false
-     },
+export default {
+  props: {
+    btsStyle: String,
+    message: null,
+    btsRounded: {
+      type: Boolean,
+      default: false
+    },
     btsType: String
   }
 }
