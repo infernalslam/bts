@@ -9,14 +9,31 @@
     <bts-button message="Warning" bts-type="is-warning" btsSize="small"></bts-button>
     <bts-button message="Danger" bts-type="is-danger" btsSize="large"></bts-button>
   <!-- button -->
+  <br>
+  <!-- select -->
+  <bts-select :bts-data="data" bts-value="name"></bts-select>
 </div>
 </template>
 
 <script>
 import BtsButton from './button'
+import BtsSelect from './select'
 export default {
+  data () {
+    return {
+      data: [
+        { name: 'Primary' },
+        { name: 'Info' },
+        { name: 'Success' },
+        { name: 'Warning' },
+        { name: 'Danger' }
+      ],
+      text: ''
+    }
+  },
   components: {
-    BtsButton
+    BtsButton,
+    BtsSelect
   }
 }
 </script>
