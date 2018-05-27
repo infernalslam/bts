@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "build:layout": "gulp build-bts-layout"
+    "build:bts": "gulp build-bts-bulma"
   },
   "dependencies": {
     "vue": "^2.5.2",

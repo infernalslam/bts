@@ -3,9 +3,9 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const rename = require('gulp-rename')
 
-gulp.task('build-bts-layout', function () {
+gulp.task('build-bts-bulma', function () {
   const outputConfigs = {
-    src: './src/assets/layout.css',
+    src: './src/assets/bulma.css',
     prefix: 'bts.',
     basename: 'full'
   }
@@ -24,5 +24,5 @@ function generateCSS ({ src = '', prefix = '', basename = '' }) {
         extname: '.css'
       })
     )
-    .pipe(gulp.dest('./css-layout/'))
+    .pipe(gulp.dest('./css-bts-bulma/'))
 }
