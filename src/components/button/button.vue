@@ -1,5 +1,5 @@
 <template>
-  <div class="button " :class="btsType + btsRounded" :style="btsStyle">  {{ message }} </div>
+  <div class="button " :class="`${btsType}  ${btsRounded} ${btsOutlined} ${size}`" :style="btsStyle">  {{ message }} </div>
 </template>
 
 <script>
@@ -14,6 +14,25 @@ export default {
     btsType: {
       type: String,
       default: this.btsStyle ? this.btsStyle : ''
+    },
+    btsOutlined: {
+      type: null,
+      default: this.btsOutlined ? this.btsOutlined : ''
+    },
+    btsSize: {
+      type: String,
+      default: this.btsSize ? this.btsSize : ''
+    }
+  },
+  computed: {
+    size () {
+      let size = this.btsSize.toLowerCase()
+      switch (size) {
+        case 'small' : return 'is-small'
+        case 'medium' : return 'is-medium'
+        case 'large': return 'is-large'
+        default : return ''
+      }
     }
   }
 }
