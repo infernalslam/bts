@@ -1,7 +1,13 @@
 <template>
 <div>
   Hello components BTS x Bulma
-  <bts-button :message="Bts"></bts-button>
+  <!-- custom style -->
+  <bts-button btsStyle="color: red;" message="BTS"></bts-button>
+  <bts-button message="BTS" bts-type="is-primary"></bts-button>
+  <bts-button message="BTS" bts-type="is-info"></bts-button>
+  <bts-button message="BTS" bts-type="is-success"></bts-button>
+  <bts-button message="BTS" bts-type="is-warning"></bts-button>
+  <bts-button message="BTS" bts-type="is-danger"></bts-button>
 </div>
 </template>
 
