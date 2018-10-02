@@ -1,6 +1,6 @@
-# bts-css
+# BTS-CSS
 
-> A Vue.js project
+> A Vue.js project, A CSS framework By Infernalslam.
 
 ## Build Setup
 
